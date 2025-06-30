@@ -1,0 +1,27 @@
+﻿
+************************************************************************
+strReqXML<request><Operation>Export</Operation><PlantID>1</PlantID><ERPName>SAP BUSINESS ONE</ERPName><CUSTOMERID>9243700001</CUSTOMERID><DeliveryNo></DeliveryNo><MultipleDeliveryNo>006275400008015992</MultipleDeliveryNo><Carrier>PUROLATORESHIP</Carrier><Service>PurolatorGround</Service><AccountNumber>6271561</AccountNumber><PaymentType>Third Party</PaymentType><UShipCode>Purolator</UShipCode><PaymentType>Third Party</PaymentType><ShipDate>2021-09-24</ShipDate><PackageCount>1</PackageCount><PONumber>53697833</PONumber><InvoiceNumber>4012005</InvoiceNumber><ShipFromCountry></ShipFromCountry><ShipToCountry></ShipToCountry><PublishedFreight>0</PublishedFreight><DiscountedFreight>0</DiscountedFreight><ShippingNo></ShippingNo><TotalWeight>0.30</TotalWeight><MASTERTRACKINGNO>333147891670</MASTERTRACKINGNO><Pack><Weight>0.30</Weight><HandlingUnitId></HandlingUnitId><TRACKINGNO>333147891670</TRACKINGNO><ReturnFreight></ReturnFreight><CartonID>006275400000445445</CartonID></Pack></request>
+
+************************************************************************
+SELECT DISTINCT ODLN.DocNum AS DELIVERYNUM FROM PMX_LUID INNER JOIN PMX_INVD ON PMX_INVD."LOGUNITIDENTKEY" = PMX_LUID."INTERNALKEY" JOIN OITM ON OITM.ITEMCODE = PMX_INVD.ITEMCODE JOIN DLN1 ON DLN1.DOCENTRY = PMX_INVD.DOCENTRY AND DLN1.LINENUM = PMX_INVD.DOCLINENUM JOIN ODLN ON ODLN.DOCENTRY = DLN1.DOCENTRY JOIN OCRD ON OCRD.CARDCODE = ODLN.CARDCODE JOIN CRD1 ON ODLN.SHIPTOCODE = CRD1.ADDRESS AND CRD1.ADRESTYPE = 'S' LEFT OUTER JOIN OSHP ON ODLN.TRNSPCODE=OSHP.TRNSPCODE WHERE PMX_LUID.SSCC IN(006275400008015992) AND PMX_INVD.TRANSTYPE = '15'
+
+************************************************************************
+
+
+************************************************************************
+strReqXML<request><Operation>Export</Operation><PlantID>1</PlantID><ERPName>SAP BUSINESS ONE</ERPName><CUSTOMERID>9243700001</CUSTOMERID><DeliveryNo></DeliveryNo><MultipleDeliveryNo>006275400008015992</MultipleDeliveryNo><Carrier>PUROLATORESHIP</Carrier><Service>PurolatorGround</Service><AccountNumber>6271561</AccountNumber><PaymentType>Third Party</PaymentType><UShipCode>Purolator</UShipCode><PaymentType>Third Party</PaymentType><ShipDate>2021-09-24</ShipDate><PackageCount>1</PackageCount><PONumber>53697833</PONumber><InvoiceNumber>4012005</InvoiceNumber><ShipFromCountry></ShipFromCountry><ShipToCountry></ShipToCountry><PublishedFreight>0</PublishedFreight><DiscountedFreight>0</DiscountedFreight><ShippingNo></ShippingNo><TotalWeight>0.30</TotalWeight><MASTERTRACKINGNO>333147897073</MASTERTRACKINGNO><Pack><Weight>0.30</Weight><HandlingUnitId></HandlingUnitId><TRACKINGNO>333147897073</TRACKINGNO><ReturnFreight></ReturnFreight><CartonID>006275400000445445</CartonID></Pack></request>
+
+************************************************************************
+SELECT DISTINCT ODLN.DocNum AS DELIVERYNUM FROM PMX_LUID INNER JOIN PMX_INVD ON PMX_INVD."LOGUNITIDENTKEY" = PMX_LUID."INTERNALKEY" JOIN OITM ON OITM.ITEMCODE = PMX_INVD.ITEMCODE JOIN DLN1 ON DLN1.DOCENTRY = PMX_INVD.DOCENTRY AND DLN1.LINENUM = PMX_INVD.DOCLINENUM JOIN ODLN ON ODLN.DOCENTRY = DLN1.DOCENTRY JOIN OCRD ON OCRD.CARDCODE = ODLN.CARDCODE JOIN CRD1 ON ODLN.SHIPTOCODE = CRD1.ADDRESS AND CRD1.ADRESTYPE = 'S' LEFT OUTER JOIN OSHP ON ODLN.TRNSPCODE=OSHP.TRNSPCODE WHERE PMX_LUID.SSCC IN(006275400008015992) AND PMX_INVD.TRANSTYPE = '15'
+
+************************************************************************
+
+
+************************************************************************
+strReqXML<request><Operation>Export</Operation><PlantID>1</PlantID><ERPName>SAP BUSINESS ONE</ERPName><CUSTOMERID>9243700001</CUSTOMERID><DeliveryNo></DeliveryNo><MultipleDeliveryNo>006275400008015992</MultipleDeliveryNo><Carrier>PUROLATORESHIP</Carrier><Service>PurolatorGround</Service><AccountNumber>6271561</AccountNumber><PaymentType>Third Party</PaymentType><UShipCode>Purolator</UShipCode><PaymentType>Third Party</PaymentType><ShipDate>2021-09-24</ShipDate><PackageCount>1</PackageCount><PONumber>53697833</PONumber><InvoiceNumber>4012005</InvoiceNumber><ShipFromCountry></ShipFromCountry><ShipToCountry></ShipToCountry><PublishedFreight>0</PublishedFreight><DiscountedFreight>0</DiscountedFreight><ShippingNo></ShippingNo><TotalWeight>0.30</TotalWeight><MASTERTRACKINGNO>333147910967</MASTERTRACKINGNO><Pack><Weight>0.30</Weight><HandlingUnitId></HandlingUnitId><TRACKINGNO>333147910967</TRACKINGNO><ReturnFreight></ReturnFreight><CartonID>006275400000445445</CartonID></Pack></request>
+
+************************************************************************
+SELECT DISTINCT ODLN.DocNum AS DELIVERYNUM FROM PMX_LUID INNER JOIN PMX_INVD ON PMX_INVD."LOGUNITIDENTKEY" = PMX_LUID."INTERNALKEY" JOIN OITM ON OITM.ITEMCODE = PMX_INVD.ITEMCODE JOIN DLN1 ON DLN1.DOCENTRY = PMX_INVD.DOCENTRY AND DLN1.LINENUM = PMX_INVD.DOCLINENUM JOIN ODLN ON ODLN.DOCENTRY = DLN1.DOCENTRY JOIN OCRD ON OCRD.CARDCODE = ODLN.CARDCODE JOIN CRD1 ON ODLN.SHIPTOCODE = CRD1.ADDRESS AND CRD1.ADRESTYPE = 'S' LEFT OUTER JOIN OSHP ON ODLN.TRNSPCODE=OSHP.TRNSPCODE WHERE PMX_LUID.SSCC IN(006275400008015992) AND PMX_INVD.TRANSTYPE = '15'
+
+************************************************************************
+
